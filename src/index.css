@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,300;0,400;1,300&display=swap");
+
+:root {
+  --clr-black: #17171b;
+  --clr-white: #fff8f1;
+  --index: calc(1vw + 1vw);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  color: var(--clr-white);
+  font-family: Bebas Neue;
+  background: none;
+  border: none;
+}
+
+body {
+  background: var(--clr-black);
+  padding: 0 calc(var(--index) * 5);
+  overflow-x: hidden;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: calc(var(--index) * 7);
+}
+
+li,
+button {
+  font-size: calc(var(--index) * 2);
+  cursor: pointer;
+}
+
+ul {
+  display: flex;
+  gap: 24px;
+}
+
+.resume-icon {
+  font-size: calc(var(--index) * 1.5);
+  margin-right: 8px;
+}
+
+.hero-nadia {
+  width: calc(var(--index) * 30);
+  position: absolute;
+  top: calc(var(--index) * 20);
+}
+.hero-sphere {
+  width: calc(var(--index) * 35);
+  position: absolute;
+  left: 30%;
+}
+
+.hero h1 {
+  font-size: calc(var(--index) * 4);
+  position: absolute;
+  top: calc(var(--index) * 35.7);
+  margin-left: calc(var(--index) * 1);
+}
+
+.main-btn {
+  position: absolute;
+  top: calc(var(--index) * 41);
+  margin-left: calc(var(--index) * 1);
+  border: 2px solid var(--clr-white);
+  padding: 0.5em 2em;
+  border-radius: 20px;
+}

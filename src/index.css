@@ -41,7 +41,16 @@ ul {
   display: flex;
   gap: 24px;
 }
-
+a,
+span {
+  font-size: 24px;
+}
+h2 {
+  font-size: calc(var(--index) * 3.5);
+}
+p {
+  font-family: Montserrat;
+}
 .resume-icon {
   font-size: calc(var(--index) * 1.5);
   margin-right: 8px;
@@ -50,26 +59,56 @@ ul {
 .hero-nadia {
   width: calc(var(--index) * 30);
   position: absolute;
-  top: calc(var(--index) * 20);
+  top: calc(var(--index) * 15);
 }
 .hero-sphere {
-  width: calc(var(--index) * 35);
+  width: calc(var(--index) * 40);
   position: absolute;
   left: 30%;
+}
+
+.hero {
+  position: relative;
 }
 
 .hero h1 {
   font-size: calc(var(--index) * 4);
   position: absolute;
-  top: calc(var(--index) * 35.7);
+  top: calc(var(--index) * 30.5);
   margin-left: calc(var(--index) * 1);
 }
 
-.main-btn {
-  position: absolute;
-  top: calc(var(--index) * 41);
-  margin-left: calc(var(--index) * 1);
-  border: 2px solid var(--clr-white);
-  padding: 0.5em 2em;
-  border-radius: 20px;
+.about {
+  position: relative;
+  top: calc(var(--index) * 45);
+  width: 90%;
+}
+
+.about-text {
+  display: flex;
+  gap: 24px;
+  padding-bottom: 48px;
+}
+.about-text p {
+  width: max-content;
+}
+
+.tech-icons {
+  display: flex;
+  gap: 5px;
+  padding-bottom: 12px;
+}
+
+.tech-icons > * {
+  font-size: 40px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact a,
+.contact span {
+  letter-spacing: 1.5px;
 }

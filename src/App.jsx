@@ -1,5 +1,6 @@
 import Hero from "./Sections/Hero";
 import Nav from "./Sections/Nav";
+import About from "./Sections/About";
 import "./index.css";
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <main>
       <Nav />
       <Hero />
+      <About />
     </main>
   );
 }

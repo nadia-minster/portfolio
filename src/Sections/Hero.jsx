@@ -8,7 +8,6 @@ const Hero = () => {
       <img src={sphere} alt="decorative sphere" className="hero-sphere" />
       <img src={nadia} alt="Nadia Minster" className="hero-nadia" />
       <h1>Web developer</h1>
-      <button className="main-btn">Projects</button>
     </section>
   );
 };

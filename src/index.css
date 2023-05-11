@@ -48,6 +48,9 @@ span {
 h2 {
   font-size: calc(var(--index) * 3.5);
 }
+h3 {
+  font-size: calc(var(--index) * 2);
+}
 p {
   font-family: Montserrat;
 }
@@ -87,7 +90,7 @@ p {
 .about-text {
   display: flex;
   gap: 24px;
-  padding-bottom: 48px;
+  padding-bottom: 12px;
 }
 .about-text p {
   width: max-content;
@@ -96,7 +99,7 @@ p {
 .tech-icons {
   display: flex;
   gap: 5px;
-  padding-bottom: 12px;
+  padding-bottom: 36px;
 }
 
 .tech-icons > * {
@@ -111,4 +114,34 @@ p {
 .contact a,
 .contact span {
   letter-spacing: 1.5px;
+}
+
+.projects {
+  position: relative;
+  top: calc(var(--index) * 55);
+  width: 100%;
+}
+
+.projects-container {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+  gap: 12px;
+}
+
+.project {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid var(--clr-white);
+}
+
+.footer {
+  position: relative;
+  top: calc(var(--index) * 85);
+  width: 100%;
+  padding-bottom: 24px;
+  display: grid;
+  justify-content: center;
 }

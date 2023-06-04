@@ -41,7 +41,7 @@ button {
 @media screen and (max-width: 600px) {
   li,
   button {
-    font-size: 32px;
+    font-size: 28px;
   }
 }
 
@@ -116,7 +116,7 @@ p {
   .hero-sphere {
     width: 800px;
     left: 35%;
-    margin-top: -2rem;
+    margin-top: -1rem;
   }
   .hero-nadia {
     width: calc(var(--index) * 45);
@@ -130,6 +130,7 @@ p {
   }
   .hero h1 {
     font-size: 80px;
+    line-height: 70px;
     position: absolute;
     margin-top: 13.4rem;
     left: -1.7rem;

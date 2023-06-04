@@ -130,7 +130,7 @@ p {
   }
   .hero h1 {
     font-size: 80px;
-    line-height: 70px;
+    line-height: 0px;
     position: absolute;
     margin-top: 13.4rem;
     left: -1.7rem;
@@ -156,7 +156,7 @@ p {
 
 .about {
   position: relative;
-  top: calc(var(--index) * 45);
+  top: calc(var(--index) * 42);
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -195,9 +195,9 @@ p {
   letter-spacing: 1.5px;
 }
 
-.projects {
+.projects-main {
   position: relative;
-  top: calc(var(--index) * 55);
+  top: calc(var(--index) * 49);
   width: 100%;
 }
 
@@ -223,4 +223,28 @@ p {
   padding-bottom: 24px;
   display: grid;
   justify-content: center;
+}
+/****************PROJECTS*****************/
+.projects-gallery {
+  position: relative;
+  width: 100%;
+  display: flex;
+  margin-top: 3rem;
+}
+.gallery-image {
+  width: 24vw;
+}
+.project-gallery {
+  text-align: center;
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .projects-gallery {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .gallery-image {
+    width: 70vw;
+  }
 }

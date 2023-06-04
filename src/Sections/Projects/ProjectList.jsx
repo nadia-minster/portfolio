@@ -1,9 +1,8 @@
-import React from "react";
 import { FaSortDown, FaSortUp } from "react-icons/fa";
 
-const Project = ({ number }) => {
+const ProjectList = ({ number }) => {
   return (
-    <div className="single-project">
+    <div className="projects-list">
       <div className="project">
         <h3> Project Name</h3>
         <button
@@ -18,4 +17,4 @@ const Project = ({ number }) => {
   );
 };
 
-export default Project;
+export default ProjectList;

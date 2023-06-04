@@ -1,17 +1,28 @@
-import React from "react";
-import Project from "./Project";
+import { useState } from "react";
+import ProjectList from "./ProjectList";
+import ProjectsGallery from "./ProjectsGallery";
+import { projects } from "./projects.json";
 
 const Projects = () => {
+  const [mode, setMode] = useState("gallery");
+  const handleChangeMode = () => {
+    if (mode === "gallery") {
+      setMode("list");
+    } else setMode("gallery");
+  };
+
   return (
-    <div className="projects">
+    <div className="projects-main">
       <h2>Projects</h2>
-      <div className="projects-container">
-        <Project number={"01"} />
-        <Project number={"02"} />
-        <Project number={"03"} />
-        <Project number={"04"} />
-        <Project number={"05"} />
-        <Project number={"06"} />
+      <button onClick={() => handleChangeMode()}>{mode}</button>
+      <div className={`projects-${mode}`}>
+        {projects.map((project) => {
+          return mode === "gallery" ? (
+            <ProjectsGallery project={project} key={project.id} />
+          ) : (
+            <ProjectList project={project} key={project.id} />
+          );
+        })}
       </div>
     </div>
   );

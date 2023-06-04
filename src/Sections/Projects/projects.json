@@ -1,0 +1,28 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "name": "Movie Search",
+      "type": "React",
+      "link": "https://movie-picker-neou.onrender.com/",
+      "image": "/public/project-images/1.png",
+      "description": "Massa eget egestas purus viverra accumsan in nisl. Tempus imperdiet nulla malesuada pellentesque elit eget gravida. Semper feugiat nibh sed pulvinar. Ut consequat semper viverra nam libero justo. Ut pharetra sit amet aliquam id diam maecenas ultricies. Consectetur purus ut faucibus pulvinar elementum integer. Sed vulputate mi sit amet mauris commodo quis imperdiet. Amet porttitor eget dolor morbi non. Elementum curabitur vitae nunc sed velit dignissim sodales ut. Enim nunc faucibus a pellentesque sit amet porttitor eget. Sit amet tellus cras adipiscing enim eu turpis egestas."
+    },
+    {
+      "id": 2,
+      "name": "Recipe Database",
+      "type": "Mern",
+      "link": "https://kitchen-alchemy-app.onrender.com/",
+      "image": "/public/project-images/3.png",
+      "description": "Porttitor lacus luctus accumsan tortor. Egestas egestas fringilla phasellus faucibus scelerisque eleifend donec. Maecenas accumsan lacus vel facilisis volutpat. Imperdiet proin fermentum leo vel orci porta non. Ullamcorper sit amet risus nullam eget. Augue interdum velit euismod in pellentesque. Vulputate dignissim suspendisse in est. "
+    },
+    {
+      "id": 3,
+      "name": "Travel Agency",
+      "type": "React",
+      "link": "https://voyagequest.onrender.com/",
+      "image": "/public/project-images/2.png",
+      "description": " Odio euismod lacinia at quis. At consectetur lorem donec massa sapien. Odio aenean sed adipiscing diam donec. Porttitor lacus luctus accumsan tortor posuere ac ut consequat. Semper risus in hendrerit gravida rutrum quisque. Odio pellentesque diam volutpat commodo. Duis ut diam quam nulla porttitor massa id neque. Mattis molestie a iaculis at erat pellentesque adipiscing commodo."
+    }
+  ]
+}

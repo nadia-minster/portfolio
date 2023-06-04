@@ -22,6 +22,7 @@ body {
   background: var(--clr-black);
   padding: 0 calc(var(--index) * 5);
   overflow-x: hidden;
+  width: 100%;
 }
 
 nav {
@@ -70,10 +71,42 @@ p {
   left: 30%;
 }
 
+.hero-texture {
+  position: absolute;
+  width: 110vw;
+  left: -8rem;
+  top: calc(var(--index) * 8);
+  height: calc(var(--index) * 31);
+}
+
 .hero {
   position: relative;
 }
 
+@media screen and (min-width: 1000px) {
+  .hero-nadia {
+    width: calc(var(--index) * 32);
+    top: calc(var(--index) * 6);
+  }
+  .hero-sphere {
+    width: calc(var(--index) * 35);
+    left: 35%;
+    margin-top: -4rem;
+  }
+  .hero-texture {
+    top: calc(var(--index) * 4);
+    height: calc(var(--index) * 25);
+  }
+  .hero h1 {
+    margin-top: -10rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero-texture {
+    margin-left: 5rem;
+  }
+}
 .hero h1 {
   font-size: calc(var(--index) * 4);
   position: absolute;
@@ -91,6 +124,16 @@ p {
   display: flex;
   gap: 24px;
   padding-bottom: 12px;
+}
+
+@media screen and (max-width: 600px) {
+  .about-text {
+    flex-direction: column;
+    width: 200px;
+  }
+  .about-text p {
+    width: 20px;
+  }
 }
 .about-text p {
   width: max-content;

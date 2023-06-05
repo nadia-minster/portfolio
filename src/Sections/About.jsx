@@ -3,7 +3,6 @@ import {
   FaHtml5,
   FaCss3Alt,
   FaJs,
-  FaBootstrap,
   FaReact,
   FaNodeJs,
   FaFigma,
@@ -34,7 +33,6 @@ const About = () => {
       <div className="tech-icons">
         <FaHtml5 />
         <FaCss3Alt />
-        <FaBootstrap />
         <FaJs />
         <FaReact />
         <FaNodeJs />

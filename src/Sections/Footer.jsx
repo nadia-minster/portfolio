@@ -4,7 +4,7 @@ const Footer = () => {
   const year = new Date().getFullYear();
   return (
     <footer className="footer">
-      <span>{`Copyright © ${year} Nadia Minster`}</span>
+      <span>{`${year} Nadia Minster`}</span>
     </footer>
   );
 };

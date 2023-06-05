@@ -7,14 +7,31 @@ const ProjectsGallery = ({ project }) => {
   return (
     <div className="project-gallery">
       {project.image === "movie" ? (
-        <img src={movie} alt={project.name} className="gallery-image" />
+        <img
+          src={movie}
+          alt={project.name}
+          className="gallery-image"
+          onClick={() => window.open(project.link)}
+        />
       ) : project.image === "recipe" ? (
-        <img src={recipe} alt={project.name} className="gallery-image" />
+        <img
+          src={recipe}
+          alt={project.name}
+          className="gallery-image"
+          onClick={() => window.open(project.link)}
+        />
       ) : (
-        <img src={travel} alt={project.name} className="gallery-image" />
+        <img
+          src={travel}
+          alt={project.name}
+          className="gallery-image"
+          onClick={() => window.open(project.link)}
+        />
       )}
       <div className="gallery-description">
-        <h3 className="name">{project.name}</h3>
+        <a href={project.link} className="name">
+          {project.name}
+        </a>
         <h3 className="type">{project.type}</h3>
       </div>
     </div>

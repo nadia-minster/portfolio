@@ -1,17 +1,26 @@
 import { FaSortDown, FaSortUp } from "react-icons/fa";
+import { useState } from "react";
 
-const ProjectList = ({ number }) => {
+const ProjectList = ({ project }) => {
+  const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="projects-list">
+    <div className="project-list">
       <div className="project">
-        <h3> Project Name</h3>
-        <button
-          className="open-project"
-          aria-haspopup="true"
-          aria-label="Open project menu"
-        >
-          <FaSortDown />
-        </button>
+        <div className="name-and-button">
+          <h3>{project.name}</h3>
+          <button
+            className="open-project"
+            aria-haspopup="true"
+            aria-label="Open project menu"
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            {!isOpen ? <FaSortDown /> : <FaSortUp />}
+          </button>
+        </div>
+
+        <div
+          className={`project-list-desc ${!isOpen ? "closed" : "open"}`}
+        ></div>
       </div>
     </div>
   );

@@ -227,14 +227,14 @@ p {
   width: 100%;
   padding: 0 calc(var(--index) * 5);
 }
-.projects-container {
+/* .projects-list {
   width: 100%;
   position: absolute;
   display: flex;
   flex-direction: column;
   margin-top: 24px;
   gap: 12px;
-}
+} */
 
 .header-and-mode {
   display: flex;
@@ -253,9 +253,44 @@ p {
 }
 
 .project {
-  display: flex;
-  justify-content: space-between;
   border-bottom: 2px solid var(--clr-white);
+  margin-bottom: 1rem;
+}
+
+.name-and-button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 760px) {
+  .project h3 {
+    font-size: 32px;
+  }
+}
+
+.projects-list {
+  margin-top: 3rem;
+}
+
+.project-list {
+  position: relative;
+}
+
+.project-list-desc {
+  width: 100%;
+  background: var(--clr-black);
+  transition: height 0.3s ease-in;
+  overflow: hidden;
+}
+
+.project-list-desc.closed {
+  height: 0vh;
+}
+
+.project-list-desc.open {
+  height: 500px;
 }
 
 .projects-gallery {
@@ -266,15 +301,32 @@ p {
 }
 .gallery-image {
   width: 25vw;
+  cursor: pointer;
 }
 .project-gallery {
   text-align: center;
   width: 100%;
 }
 
+.gallery-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  padding: 0 0.5rem;
+}
+
+.gallery-description .name {
+  color: #7d7a7a;
+  cursor: pointer;
+}
+.gallery-description > * {
+  font-size: 24px;
+}
+
 @media screen and (max-width: 600px) {
   .projects-main {
-    top: calc(var(--index) * 67);
+    top: calc(var(--index) * 70);
   }
   .projects-gallery {
     flex-direction: column;
@@ -282,6 +334,13 @@ p {
   }
   .gallery-image {
     width: 70vw;
+  }
+  .gallery-description {
+    flex-direction: row;
+    padding: 0 2rem;
+  }
+  .gallery-description > * {
+    font-size: 32px;
   }
 }
 
@@ -291,11 +350,33 @@ p {
   }
 }
 
+@media screen and (max-width: 415px) {
+  .projects-main {
+    top: calc(var(--index) * 85);
+  }
+}
+
 .footer {
   position: relative;
-  top: 820px;
+  top: calc(var(--index) * 55);
   width: 100%;
   padding-bottom: 24px;
   display: grid;
   justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+  .footer {
+    top: calc(var(--index) * 85);
+  }
+}
+@media screen and (max-width: 600px) {
+  .footer {
+    top: calc(var(--index) * 85);
+  }
+}
+@media screen and (min-width: 1000px) {
+  .footer {
+    top: calc(var(--index) * 45);
+  }
 }

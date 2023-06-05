@@ -2,19 +2,21 @@ import { useState } from "react";
 import ProjectList from "./ProjectList";
 import ProjectsGallery from "./ProjectsGallery";
 import { projects } from "./projects.json";
+import { FaThLarge, FaThList } from "react-icons/fa";
 
 const Projects = () => {
   const [mode, setMode] = useState("gallery");
-  const handleChangeMode = () => {
-    if (mode === "gallery") {
-      setMode("list");
-    } else setMode("gallery");
-  };
 
   return (
     <div className="projects-main">
-      <h2>Projects</h2>
-      <button onClick={() => handleChangeMode()}>{mode}</button>
+      <div className="header-and-mode">
+        <h2>Projects</h2>
+        <div className="mode-buttons">
+          <FaThLarge onClick={() => setMode("gallery")} />
+          <FaThList onClick={() => setMode("list")} />
+        </div>
+      </div>
+
       <div className={`projects-${mode}`}>
         {projects.map((project) => {
           return mode === "gallery" ? (

@@ -116,6 +116,7 @@ p {
   .hero-texture {
     top: calc(var(--index) * 4);
     height: calc(var(--index) * 25);
+    margin-left: 2rem;
   }
 }
 @media screen and (max-width: 600px) {
@@ -145,8 +146,11 @@ p {
 }
 @media screen and (max-width: 415px) {
   .hero h1 {
-    top: calc(var(--index) * 20);
-    padding-left: 0.5rem;
+    top: calc(var(--index) * 45.7);
+    padding-left: 1.8rem;
+  }
+  .hero-texture {
+    top: calc(var(--index) * 24);
   }
 }
 
@@ -161,7 +165,7 @@ p {
 
 @media screen and (max-width: 600px) {
   .about {
-    top: calc(var(--index) * 65);
+    top: calc(var(--index) * 60);
   }
 }
 
@@ -175,6 +179,7 @@ p {
 
 .about-text p {
   text-align: justify;
+  padding: 0 calc(var(--index) * 4);
 }
 
 .tech-icons {
@@ -197,12 +202,31 @@ p {
   letter-spacing: 1.5px;
 }
 
-.projects-main {
-  position: relative;
-  top: calc(var(--index) * 49);
-  width: 100%;
+@media screen and (min-width: 1000px) {
+  .about {
+    top: calc(var(--index) * 32);
+  }
+  .about-text {
+    flex-direction: row;
+    padding: 2rem 8rem;
+  }
+  .about-text p {
+    padding: 0;
+  }
 }
 
+@media screen and (max-width: 415px) {
+  .about {
+    top: calc(var(--index) * 74);
+  }
+}
+
+.projects-main {
+  position: relative;
+  top: calc(var(--index) * 48);
+  width: 100%;
+  padding: 0 calc(var(--index) * 5);
+}
 .projects-container {
   width: 100%;
   position: absolute;
@@ -212,21 +236,28 @@ p {
   gap: 12px;
 }
 
+.header-and-mode {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mode-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.mode-buttons > * {
+  font-size: calc(var(--index) * 2);
+  cursor: pointer;
+}
+
 .project {
   display: flex;
   justify-content: space-between;
   border-bottom: 2px solid var(--clr-white);
 }
 
-.footer {
-  position: relative;
-  top: calc(var(--index) * 85);
-  width: 100%;
-  padding-bottom: 24px;
-  display: grid;
-  justify-content: center;
-}
-/****************PROJECTS*****************/
 .projects-gallery {
   position: relative;
   width: 100%;
@@ -234,7 +265,7 @@ p {
   margin-top: 3rem;
 }
 .gallery-image {
-  width: 24vw;
+  width: 25vw;
 }
 .project-gallery {
   text-align: center;
@@ -242,6 +273,9 @@ p {
 }
 
 @media screen and (max-width: 600px) {
+  .projects-main {
+    top: calc(var(--index) * 67);
+  }
   .projects-gallery {
     flex-direction: column;
     gap: 3rem;
@@ -249,4 +283,19 @@ p {
   .gallery-image {
     width: 70vw;
   }
+}
+
+@media screen and (min-width: 1000px) {
+  .projects-main {
+    top: calc(var(--index) * 35);
+  }
+}
+
+.footer {
+  position: relative;
+  top: 820px;
+  width: 100%;
+  padding-bottom: 24px;
+  display: grid;
+  justify-content: center;
 }

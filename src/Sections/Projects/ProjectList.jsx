@@ -1,4 +1,7 @@
 import { FaSortDown, FaSortUp } from "react-icons/fa";
+import movie from "../../assets/project-images/movie-list-image.png";
+import recipe from "../../assets/project-images/recipe-list-image.png";
+import travel from "../../assets/project-images/tour-list-image.png";
 import { useState } from "react";
 import {
   FaHtml5,
@@ -8,11 +11,7 @@ import {
   FaNodeJs,
   FaFigma,
   FaGithub,
-  FaEnvelope,
 } from "react-icons/fa";
-import movie from "../../assets/project-images/movie-list-image.png";
-import recipe from "../../assets/project-images/recipe.png";
-import travel from "../../assets/project-images/travel.png";
 
 const ProjectList = ({ project }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -43,6 +42,7 @@ const ProjectList = ({ project }) => {
             <FaJs />
             <FaReact />
             <FaFigma />
+            {project.id === 2 && <FaNodeJs />}
           </div>
           <img
             src={project.id === 1 ? movie : project.id === 2 ? recipe : travel}

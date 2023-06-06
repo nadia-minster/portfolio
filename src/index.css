@@ -54,6 +54,9 @@ button,
     font-size: 22px;
     margin-right: 5px;
   }
+  html {
+    overflow-x: hidden;
+  }
 }
 
 ul {
@@ -287,7 +290,7 @@ p {
 .project-list-desc {
   width: 100%;
   background: var(--clr-black);
-  transition: height 0.3s ease-in;
+  transition: max-height 0.3s ease-in;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -296,12 +299,12 @@ p {
 }
 
 .project-list-desc.closed {
-  height: 0vh;
+  max-height: 0;
 }
 
 .project-list-desc.open {
-  min-height: 500px;
   height: fit-content;
+  max-height: 700px;
   padding-bottom: 48px;
 }
 

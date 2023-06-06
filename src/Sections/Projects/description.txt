@@ -1,0 +1,29 @@
+1. Movie - 
+
+["The main idea of this app, is that instead of searching for a specific movie
+by title, you can get three best ranking movies by year and genre. You can enter 
+them manualy or get randomized results if you're feeling lucky. You can also save movies,
+mark them as watched and rate them later.",
+
+"This is by far the favorite project I made, simply because I like to use it very often. I see it is 
+a great way to find a lot of movies you didn't know existed and it makes choosing 
+a movie much easier, by limiting the options to only three movies.",
+
+"I designed this website back in autumn 2022 and first made it in Vanilla JS, later I re-made it in React. 
+The API I used is TMDB https://www.themoviedb.org."]
+
+2.Recipe -
+["This is a full-stack MERN application, where users can search for recipes and filter them by
+meal type or cuisine, also save the recipes to cook them later. There's an option to create an account, 
+or log in to existing one. All the passwords are securely hashed and salted, however all the 
+functionality is still available to unauthenticated users.",
+"I also implemented role-based access conrol to ensure that only the admin can create and edit new recipes. I finished working on this application in late May 2023."]
+
+3.Travel Agency
+[
+    "This is a mock tour agency website, that is meant to help potential users find a perfect tour.
+    They can browse featured tours, read reviews or take a quiz to find out with tour is perfect for them and receive a discount.
+    Users can book a tour at a new discounted price. ",
+    "I used Chat GPT to write for genrating descriptions
+    and itineraries for different tours which I used to populate a static json file. I started working on this website around March 2023. "
+]

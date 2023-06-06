@@ -6,7 +6,11 @@
       "type": "React",
       "link": "https://movie-picker-neou.onrender.com/",
       "image": "movie",
-      "description": "Massa eget egestas purus viverra accumsan in nisl. Tempus imperdiet nulla malesuada pellentesque elit eget gravida. Semper feugiat nibh sed pulvinar. Ut consequat semper viverra nam libero justo. Ut pharetra sit amet aliquam id diam maecenas ultricies. Consectetur purus ut faucibus pulvinar elementum integer. Sed vulputate mi sit amet mauris commodo quis imperdiet. Amet porttitor eget dolor morbi non. Elementum curabitur vitae nunc sed velit dignissim sodales ut. Enim nunc faucibus a pellentesque sit amet porttitor eget. Sit amet tellus cras adipiscing enim eu turpis egestas."
+      "description": [
+        "The main idea of this app, is that instead of searching for a specific movie by title, you can get three best ranking movies by year and genre. You can enter them manualy or get randomized results if you're feeling lucky. You can also save movies, mark them as watched and rate them later.",
+        "This is by far the favorite project I made, simply because I like to use it very often. I see it is a great way to find a lot of movies you didn't know existed and it makes choosing movie much easier, by limiting the options to only three movies.",
+        "I designed this website back in autumn 2022 and first made it in Vanilla JS, later I re-made it in React. The API I used is TMDB https://www.themoviedb.org."
+      ]
     },
     {
       "id": 2,
@@ -14,7 +18,10 @@
       "type": "Mern",
       "link": "https://kitchen-alchemy-app.onrender.com/",
       "image": "recipe",
-      "description": "Porttitor lacus luctus accumsan tortor. Egestas egestas fringilla phasellus faucibus scelerisque eleifend donec. Maecenas accumsan lacus vel facilisis volutpat. Imperdiet proin fermentum leo vel orci porta non. Ullamcorper sit amet risus nullam eget. Augue interdum velit euismod in pellentesque. Vulputate dignissim suspendisse in est. "
+      "description": [
+        "This is a full-stack MERN application, where users can search for recipes and filter them by meal type or cuisine, also save the recipes to cook them later. There's an option to create an account, or log in to existing one. All the passwords are securely hashed and salted, however all the functionality is still available to unauthenticated users.",
+        "I also implemented role-based access conrol to ensure that only the admin can create and edit new recipes. I finished working on this application in late May 2023."
+      ]
     },
     {
       "id": 3,
@@ -22,7 +29,10 @@
       "type": "React",
       "link": "https://voyagequest.onrender.com/",
       "image": "travel",
-      "description": " Odio euismod lacinia at quis. At consectetur lorem donec massa sapien. Odio aenean sed adipiscing diam donec. Porttitor lacus luctus accumsan tortor posuere ac ut consequat. Semper risus in hendrerit gravida rutrum quisque. Odio pellentesque diam volutpat commodo. Duis ut diam quam nulla porttitor massa id neque. Mattis molestie a iaculis at erat pellentesque adipiscing commodo."
+      "description": [
+        "This is a mock tour agency website, that is meant to help potential users find a perfect tour. They can browse featured tours, read reviews or take a quiz to find out with tour is perfect for them and receive a discount. Users can book a tour at a new discounted price. ",
+        "I used Chat GPT to write for genrating descriptions and itineraries for different tours which I used to populate a static json file. I started working on this website around March 2023. "
+      ]
     }
   ]
 }

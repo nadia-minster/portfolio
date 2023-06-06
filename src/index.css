@@ -65,7 +65,7 @@ span {
   font-size: 24px;
 }
 h2 {
-  font-size: calc(var(--index) * 3.5);
+  font-size: 42px;
 }
 h3 {
   font-size: calc(var(--index) * 2);
@@ -254,7 +254,7 @@ p {
 }
 
 .mode-buttons > * {
-  font-size: calc(var(--index) * 2);
+  font-size: 32px;
   cursor: pointer;
 }
 
@@ -288,6 +288,10 @@ p {
   width: 100%;
   background: var(--clr-black);
   transition: height 0.3s ease-in;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
   overflow: hidden;
 }
 
@@ -296,7 +300,25 @@ p {
 }
 
 .project-list-desc.open {
-  height: 500px;
+  min-height: 500px;
+  height: fit-content;
+  padding-bottom: 48px;
+}
+
+.project-description {
+  text-align: justify;
+}
+
+.list-image {
+  width: 100%;
+}
+
+.list-tech-icons {
+  align-self: flex-start;
+}
+
+.list-tech-icons > * {
+  font-size: 36px;
 }
 
 .projects-gallery {

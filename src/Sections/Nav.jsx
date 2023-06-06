@@ -1,5 +1,6 @@
 import React from "react";
 import { FaArrowDown } from "react-icons/fa";
+import { Link } from "react-scroll";
 
 const Nav = () => {
   const handleDownload = () => {
@@ -7,10 +8,26 @@ const Nav = () => {
   };
   return (
     <nav>
-      <ul>
-        <li>About</li>
-        <li>Projects</li>
-      </ul>
+      <div className="nav-links">
+        <Link
+          to="about"
+          smooth={true}
+          duration={500}
+          offset={-50}
+          className="nav-link"
+        >
+          About
+        </Link>
+        <Link
+          to="projects"
+          smooth={true}
+          duration={500}
+          offset={-50}
+          className="nav-link"
+        >
+          Projects
+        </Link>
+      </div>
       <button onClick={() => handleDownload()}>
         <FaArrowDown className="resume-icon" />
         Resume

@@ -12,7 +12,7 @@ import {
 
 const About = () => {
   return (
-    <section className="main about">
+    <section className="main about" id="about">
       <h2>About Me</h2>
       <div className="about-text">
         <p>

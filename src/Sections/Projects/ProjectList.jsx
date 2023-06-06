@@ -47,8 +47,8 @@ const ProjectList = ({ project }) => {
               {project.id === 2 && <FaNodeJs />}
             </div>
             <div className="list-link-icons">
-              <FaGithub />
-              <FaExternalLinkAlt />
+              <FaGithub onClick={() => window.open(project.github)} />
+              <FaExternalLinkAlt onClick={() => window.open(project.link)} />
             </div>
           </div>
 

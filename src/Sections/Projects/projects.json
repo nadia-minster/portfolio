@@ -5,6 +5,7 @@
       "name": "Movie Search",
       "type": "React",
       "link": "https://movie-picker-neou.onrender.com/",
+      "github": "https://github.com/nadia-minster/movie-search-project",
       "image": "movie",
       "description": [
         "The main idea of this app, is that instead of searching for a specific movie by title, you can get three best ranking movies by year and genre. You can enter them manualy or get randomized results if you're feeling lucky. You can also save movies, mark them as watched and rate them later.",
@@ -17,6 +18,7 @@
       "name": "Recipe Database",
       "type": "Mern",
       "link": "https://kitchen-alchemy-app.onrender.com/",
+      "github": "https://github.com/nadia-minster/recipe-app",
       "image": "recipe",
       "description": [
         "This is a full-stack MERN application, where users can search for recipes and filter them by meal type or cuisine, also save the recipes to cook them later. There's an option to create an account, or log in to existing one. All the passwords are securely hashed and salted, however all the functionality is still available to unauthenticated users.",
@@ -28,6 +30,7 @@
       "name": "Travel Agency",
       "type": "React",
       "link": "https://voyagequest.onrender.com/",
+      "github": "https://github.com/nadia-minster/01-travel-agency",
       "image": "travel",
       "description": [
         "This is a mock tour agency website, that is meant to help potential users find a perfect tour. They can browse featured tours, read reviews or take a quiz to find out with tour is perfect for them and receive a discount. Users can book a tour at a new discounted price. ",

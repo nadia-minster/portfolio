@@ -11,6 +11,7 @@ import {
   FaNodeJs,
   FaFigma,
   FaGithub,
+  FaExternalLinkAlt,
 } from "react-icons/fa";
 
 const ProjectList = ({ project }) => {
@@ -36,14 +37,21 @@ const ProjectList = ({ project }) => {
               {paragraph}
             </p>
           ))}
-          <div className="list-tech-icons">
-            <FaHtml5 />
-            <FaCss3Alt />
-            <FaJs />
-            <FaReact />
-            <FaFigma />
-            {project.id === 2 && <FaNodeJs />}
+          <div className="list-icons">
+            <div className="list-tech-icons">
+              <FaHtml5 />
+              <FaCss3Alt />
+              <FaJs />
+              <FaReact />
+              <FaFigma />
+              {project.id === 2 && <FaNodeJs />}
+            </div>
+            <div className="list-link-icons">
+              <FaGithub />
+              <FaExternalLinkAlt />
+            </div>
           </div>
+
           <img
             src={project.id === 1 ? movie : project.id === 2 ? recipe : travel}
             alt={project.name}

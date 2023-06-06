@@ -18,10 +18,12 @@
   border: none;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   background: var(--clr-black);
-  /* padding: 0 calc(var(--index) * 3); */
-  overflow-x: hidden;
   width: 100%;
 }
 
@@ -53,9 +55,6 @@ button,
   .resume-icon {
     font-size: 22px;
     margin-right: 5px;
-  }
-  html {
-    overflow-x: hidden;
   }
 }
 
@@ -316,12 +315,20 @@ p {
   width: 100%;
 }
 
-.list-tech-icons {
-  align-self: flex-start;
+.list-icons {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .list-tech-icons > * {
   font-size: 36px;
+}
+
+.list-link-icons > * {
+  font-size: 28px;
+  margin-left: 8px;
 }
 
 .projects-gallery {

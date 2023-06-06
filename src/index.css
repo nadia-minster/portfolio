@@ -34,15 +34,25 @@ nav {
 }
 
 li,
-button {
+button,
+.resume-icon {
   font-size: 36px;
   cursor: pointer;
+}
+.resume-icon {
+  font-size: 28px;
+  margin-right: 8px;
 }
 
 @media screen and (max-width: 600px) {
   li,
-  button {
+  button,
+  .resume-icon {
     font-size: 28px;
+  }
+  .resume-icon {
+    font-size: 22px;
+    margin-right: 5px;
   }
 }
 
@@ -62,10 +72,6 @@ h3 {
 }
 p {
   font-family: Montserrat;
-}
-.resume-icon {
-  font-size: calc(var(--index) * 1.5);
-  margin-right: 8px;
 }
 
 .hero-nadia {

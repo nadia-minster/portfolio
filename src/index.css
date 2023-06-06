@@ -18,13 +18,13 @@
   border: none;
 }
 
-html {
-  overflow-x: hidden;
-}
-
 body {
   background: var(--clr-black);
   width: 100%;
+}
+
+main {
+  overflow-x: hidden;
 }
 
 nav {
@@ -103,6 +103,13 @@ p {
   padding-left: calc(var(--index) * 4);
 }
 
+.see-projects-button {
+  position: absolute;
+  top: calc(var(--index) * 32.5);
+  padding-left: calc(var(--index) * 4);
+  font-size: 32px;
+}
+
 .hero {
   position: relative;
 }
@@ -111,6 +118,10 @@ p {
   .hero h1 {
     top: calc(var(--index) * 21);
     font-size: 64px;
+  }
+  .see-projects-button {
+    top: calc(var(--index) * 24);
+    font-size: 40px;
   }
   .hero-nadia {
     width: calc(var(--index) * 32);
@@ -131,6 +142,11 @@ p {
   .hero h1 {
     top: calc(var(--index) * 46);
     padding-left: 1rem;
+  }
+
+  .see-projects-button {
+    top: calc(var(--index) * 54);
+    padding-left: 2rem;
   }
 
   .hero-texture {
@@ -157,8 +173,14 @@ p {
     top: calc(var(--index) * 45.7);
     padding-left: 1.8rem;
   }
+
+  .see-projects-button {
+    top: calc(var(--index) * 49);
+    padding-left: 2rem;
+  }
   .hero-texture {
     top: calc(var(--index) * 24);
+    font-size: 24px;
   }
 }
 
@@ -173,7 +195,7 @@ p {
 
 @media screen and (max-width: 600px) {
   .about {
-    top: calc(var(--index) * 60);
+    top: calc(var(--index) * 75);
   }
 }
 
@@ -225,7 +247,7 @@ p {
 
 @media screen and (max-width: 415px) {
   .about {
-    top: calc(var(--index) * 74);
+    top: calc(var(--index) * 77);
   }
 }
 
@@ -364,7 +386,7 @@ p {
 
 @media screen and (max-width: 600px) {
   .projects-main {
-    top: calc(var(--index) * 70);
+    top: calc(var(--index) * 93);
   }
   .projects-gallery {
     flex-direction: column;
@@ -384,13 +406,13 @@ p {
 
 @media screen and (min-width: 1000px) {
   .projects-main {
-    top: calc(var(--index) * 35);
+    top: calc(var(--index) * 38);
   }
 }
 
 @media screen and (max-width: 415px) {
   .projects-main {
-    top: calc(var(--index) * 85);
+    top: calc(var(--index) * 90);
   }
 }
 
@@ -405,12 +427,12 @@ p {
 
 @media screen and (max-width: 600px) {
   .footer {
-    top: calc(var(--index) * 85);
+    top: calc(var(--index) * 95);
   }
 }
 @media screen and (max-width: 600px) {
   .footer {
-    top: calc(var(--index) * 85);
+    top: calc(var(--index) * 100);
   }
 }
 @media screen and (min-width: 1000px) {

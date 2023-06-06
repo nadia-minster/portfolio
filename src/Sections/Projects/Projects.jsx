@@ -8,7 +8,7 @@ const Projects = () => {
   const [mode, setMode] = useState("gallery");
 
   return (
-    <div className="projects-main">
+    <div className="projects-main" id="projects">
       <div className="header-and-mode">
         <h2>Projects</h2>
         <div className="mode-buttons">

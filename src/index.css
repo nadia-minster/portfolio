@@ -104,25 +104,26 @@ p {
 
 @media screen and (min-width: 1000px) {
   .hero h1 {
-    top: calc(var(--index) * 21);
+    top: calc(var(--index) * 18);
     font-size: 64px;
   }
   .see-projects-button {
-    top: calc(var(--index) * 24);
+    top: calc(var(--index) * 21);
     font-size: 40px;
   }
   .hero-nadia {
-    width: calc(var(--index) * 32);
-    top: calc(var(--index) * 6);
+    width: calc(var(--index) * 30);
+    top: calc(var(--index) * 4);
   }
   .hero-sphere {
     width: calc(var(--index) * 35);
+    max-width: 800px;
     left: 35%;
     margin-top: -4rem;
   }
   .hero-texture {
     top: calc(var(--index) * 4);
-    height: calc(var(--index) * 25);
+    height: calc(var(--index) * 20);
     margin-left: 2rem;
   }
 }
@@ -145,7 +146,7 @@ p {
   }
 
   .hero-texture {
-    margin-left: 3rem;
+    margin-left: 5rem;
     top: calc(var(--index) * 22);
     height: calc(var(--index) * 33);
   }

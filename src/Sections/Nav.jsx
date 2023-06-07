@@ -1,5 +1,4 @@
 import React from "react";
-import { FaArrowDown } from "react-icons/fa";
 import { Link } from "react-scroll";
 
 const Nav = () => {
@@ -28,10 +27,7 @@ const Nav = () => {
           Projects
         </Link>
       </div>
-      <button onClick={() => handleDownload()}>
-        <FaArrowDown className="resume-icon" />
-        Resume
-      </button>
+      <button onClick={() => handleDownload()}>Resume</button>
     </nav>
   );
 };

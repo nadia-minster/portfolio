@@ -34,7 +34,7 @@
       "image": "travel",
       "description": [
         "This is a mock tour agency website, that is meant to help potential users find a perfect tour. They can browse featured tours, read reviews or take a quiz to find out with tour is perfect for them and receive a discount. Users can book a tour at a new discounted price. ",
-        "I used Chat GPT to write for genrating descriptions and itineraries for different tours which I used to populate a static json file. I started working on this website around March 2023. "
+        "I used Chat GPT for genrating descriptions and itineraries for different tours which I used to populate a static json file. I started working on this website around March 2023. "
       ]
     }
   ]

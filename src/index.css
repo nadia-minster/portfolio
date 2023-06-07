@@ -32,25 +32,15 @@ nav {
 }
 
 .nav-link,
-button,
-.resume-icon {
+button {
   font-size: 36px;
   cursor: pointer;
-}
-.resume-icon {
-  font-size: 28px;
-  margin-right: 8px;
 }
 
 @media screen and (max-width: 600px) {
   .nav-link,
-  button,
-  .resume-icon {
+  button {
     font-size: 28px;
-  }
-  .resume-icon {
-    font-size: 22px;
-    margin-right: 5px;
   }
 }
 
@@ -79,12 +69,6 @@ p {
   padding-left: calc(var(--index) * 3);
 }
 
-.hide-overflow {
-  width: 100vw;
-  position: absolute;
-  height: 100vh;
-  overflow-x: hidden;
-}
 .hero-sphere {
   width: calc(var(--index) * 40);
   position: absolute;
@@ -153,6 +137,13 @@ p {
     padding-left: 2rem;
   }
 
+  .hide-overflow {
+    width: 100vw;
+    position: absolute;
+    height: 100vh;
+    overflow-x: hidden;
+  }
+
   .hero-texture {
     margin-left: 3rem;
     top: calc(var(--index) * 22);
@@ -179,8 +170,8 @@ p {
   }
 
   .see-projects-button {
-    top: calc(var(--index) * 53);
-    padding-left: 2rem;
+    top: calc(var(--index) * 53.5);
+    padding-left: 1.8rem;
   }
   .hero-texture {
     top: calc(var(--index) * 24);
@@ -236,6 +227,11 @@ p {
   letter-spacing: 1.5px;
 }
 
+.contact-link {
+  display: flex;
+  align-items: center;
+}
+
 @media screen and (min-width: 1000px) {
   .about {
     top: calc(var(--index) * 32);
@@ -246,6 +242,7 @@ p {
   }
   .about-text p {
     padding: 0;
+    align-items: flex-start;
   }
 }
 

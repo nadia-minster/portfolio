@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 
 const Nav = () => {
   const handleDownload = () => {
-    window.open("/Nadia Minster Resumè.pdf");
+    window.open("/Nadia Minster Resume.pdf");
   };
   return (
     <nav>
@@ -27,7 +27,7 @@ const Nav = () => {
           Projects
         </Link>
       </div>
-      <button onClick={() => handleDownload()}>Resumè</button>
+      <button onClick={() => handleDownload()}>Resume</button>
     </nav>
   );
 };

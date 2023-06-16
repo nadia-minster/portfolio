@@ -48,7 +48,7 @@ const Hero = () => {
           className="hero-sphere"
           style={{
             opacity: `${sphereLoaded ? 1 : 0}`,
-            transition: "opacity 0.3s ease-in",
+            transition: "opacity 0.5s ease-in",
           }}
         />
       </div>
@@ -59,7 +59,7 @@ const Hero = () => {
         className="hero-nadia"
         style={{
           opacity: `${nadiaLoaded ? 1 : 0}`,
-          transition: "opacity 0.3s ease-in",
+          transition: "opacity 0.8s ease-in",
         }}
       />
       <h1 className="heading-hero">Web developer</h1>

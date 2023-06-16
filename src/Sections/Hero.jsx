@@ -1,9 +1,6 @@
 import { useState, useEffect } from "react";
 import nadia from "../assets/Nadia.png";
 import sphere from "../assets/sphere.png";
-import placeholderNadia from "../assets/Nadia-placeholder.jpg";
-import placeholderSphere from "../assets/sphere-placeholder.jpg";
-import placeholderGlitch from "../assets/glitch-placeholder.jpg";
 import texture from "../assets/glitch-effect-black-by-rawpixel.jpg";
 import { FaArrowRight } from "react-icons/fa";
 import { Link } from "react-scroll";
@@ -34,31 +31,37 @@ const Hero = () => {
 
   return (
     <section className="main hero">
-      {backgroundLoaded ? (
-        <img src={texture} alt="background texture" className="hero-texture" />
-      ) : (
-        <img src={placeholderGlitch} className="hero-texture" />
-      )}
+      <img
+        src={texture}
+        alt="background texture"
+        className="hero-texture"
+        style={{
+          opacity: `${backgroundLoaded ? 1 : 0}`,
+          transition: "opacity 0.3s ease-in",
+        }}
+      />
+
       <div className="hide-overflow">
-        {sphereLoaded ? (
-          <img src={sphere} alt="decorative sphere" className="hero-sphere" />
-        ) : (
-          <img
-            src={placeholderSphere}
-            alt="Sphere Placeholder"
-            className="hero-sphere"
-          />
-        )}
-      </div>
-      {nadiaLoaded ? (
-        <img src={nadia} alt="Nadia Minster" className="hero-nadia" />
-      ) : (
         <img
-          src={placeholderNadia}
-          alt="Nadia Minster Placeholder"
-          className="hero-nadia"
+          src={sphere}
+          alt="decorative sphere"
+          className="hero-sphere"
+          style={{
+            opacity: `${sphereLoaded ? 1 : 0}`,
+            transition: "opacity 0.3s ease-in",
+          }}
         />
-      )}
+      </div>
+
+      <img
+        src={nadia}
+        alt="Nadia Minster"
+        className="hero-nadia"
+        style={{
+          opacity: `${nadiaLoaded ? 1 : 0}`,
+          transition: "opacity 0.3s ease-in",
+        }}
+      />
       <h1 className="heading-hero">Web developer</h1>
       <Link
         to="projects"
